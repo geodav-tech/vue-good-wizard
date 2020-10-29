@@ -24,6 +24,7 @@
       <div class="wizard__body__actions clearfix">
         <a
           v-if="backEnabled"
+          :class="{'disabled': options[currentStep].backDisabled}"
           class="wizard__back pull-left"
           @click="goBack()">
           <i class="vgw-icon vgw-prev"></i>
